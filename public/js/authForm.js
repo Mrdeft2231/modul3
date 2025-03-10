@@ -35,8 +35,9 @@ button.addEventListener("click", (event) => {
 
   console.log(formObject)
 
-  fetch("http://127.0.0.1:8080/Auth", {
+  fetch("/createAuth", {
     method: "POST",
+    credentials: "include",
     headers: {
       "Content-Type": "application/json"
     },
