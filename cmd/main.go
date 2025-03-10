@@ -3,20 +3,21 @@ package main
 import (
 	"github.com/gin-gonic/gin"
 	"log"
+	"net/http"
 	"rest/internal/http/route"
 )
 
 func main() {
 	r := gin.Default()
 
-	r.Static("/public", "./public")
-	r.NoRoute(func(c *gin.Context) {
-		c.File("./public/index.html")
-	})
+	r.Static("../public", "../public")
+	r.LoadHTMLFiles("../public/index.html")
 
 	route.UserTransport()
 	userCtrl := route.UserTransport()
-	r.GET("/")
+	r.GET("/", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "index.html", nil)
+	})
 	r.POST("/createAuth", userCtrl.CreateUser)
 	r.POST("/Auth", userCtrl.UserAuth)
 	r.POST("/ChangePassword")
