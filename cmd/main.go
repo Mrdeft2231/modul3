@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"github.com/gin-gonic/gin"
 	"log"
 	"net/http"
@@ -13,8 +14,8 @@ func main() {
 	r.Static("../public", "../public")
 	r.LoadHTMLFiles("../public/index.html")
 
-	route.UserTransport()
-	userCtrl := route.UserTransport()
+	route.UserTransport(context.Background())
+	userCtrl := route.UserTransport(context.Background())
 	r.GET("/", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "index.html", nil)
 	})
