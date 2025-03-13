@@ -12,12 +12,17 @@ func main() {
 	r := gin.Default()
 
 	r.Static("../public", "../public")
-	r.LoadHTMLFiles("../public/index.html")
+	//r.StaticFS("../public", http.Dir("../public"))
+	r.LoadHTMLFiles("../public/index.html", "../public/ChangePassword.html")
 
 	route.UserTransport(context.Background())
 	userCtrl := route.UserTransport(context.Background())
 	r.GET("/", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "index.html", nil)
+	})
+
+	r.GET("/ChangePassword", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "ChangePassword.html", nil)
 	})
 	r.POST("/createAuth", userCtrl.CreateUser)
 	r.POST("/Auth", userCtrl.UserAuth)
