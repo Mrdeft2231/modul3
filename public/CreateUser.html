@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/main.css">
+    <script src="/public/js/GetUser.js?v=1.0.2" defer></script>
+    <title>Authh</title>
+</head>
+
+<body>
+<header class="main">
+    <div class="continerTable">
+        <div class="continerTableUser">
+            <div class="TextUser">
+                <h1 class="titleUser">Сотрудники</h1>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>login</th>
+                        <th>email</th>
+                        <th>password</th>
+                        <th>status</th>
+                        <th>role</th>
+                        <th>Блокировка <br>
+                            через:</th>
+                        <th>Удалить пользователя</th>
+                    </tr>
+                    </thead>
+                    <tbody id="userTableBody">
+                    <tr>
+                        <th>deft</th>
+                        <th>deft@mail.ru</th>
+                        <th>password</th>
+                        <th>активен 🚫</th>
+                        <th>пользователь</th>
+                        <th>28</th>
+                        <th><button id="DeleteUser">Удалить</button></th>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="continerTableButton">
+            <div class="AuthText">
+                <h1>Вход в систему</h1>
+                <label class="lbAuth">
+                    Логин
+                    <input type="login" class="loginAuth" id="loginAuth" placeholder="Обязательное поле" required>
+                </label>
+                <label class="lbAuth">
+                    Почта
+                    <input type="email" class="emailAuth" id="emailAuth" placeholder="Обязательное поле" required>
+                </label>
+                <label class="lbAuth">
+                    Пароль
+                    <input type="password" class="passwordAuth" id="passwordAuth" placeholder="Обязательное поле"
+                           required>
+                </label>
+                <div class="SelectInput">
+                    <label for="Role">
+                        <select name="Role" id="Role">
+                        <option value="">Выберите роль</option>
+                        <option value="Admin">Администратор</option>
+                        <option value="User">Пользователь</option>
+                    </select>
+                    </label>
+                </div>
+
+                <div class="ButtonFormUser">
+                    <button class="CreateButton" type="submit">Создать пользователя</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</header>
+</body>
+
+</html>
