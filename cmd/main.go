@@ -28,7 +28,7 @@ func main() {
 
 	auth := r.Group("/auth", middleware.LoginMiddleware())
 
-	r.GET("/CreateUser", func(c *gin.Context) {
+	auth.GET("/CreateUser", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "CreateUser.html", nil)
 	})
 	auth.GET("/ChangePassword", func(c *gin.Context) {
@@ -39,6 +39,8 @@ func main() {
 	r.PUT("/ChangePassword", middleware.AuthMiddleware(), userCtrl.ChangePassword)
 	r.GET("/GetUsers", userCtrl.GetUsers)
 	r.DELETE("/DeleteUser/:id", userCtrl.DeleteUser)
+	r.PUT("/StatusPut/:id", userCtrl.UserStatus)
+	r.GET("/GetUser", middleware.AuthMiddleware(), userCtrl.GetUser)
 
 	if err := r.Run(); err != nil {
 		log.Fatal("Не удалось запустить сервер", err)
