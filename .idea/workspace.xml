@@ -5,29 +5,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ecb770c-2c09-45de-b58b-2951081cd5d3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/FormHTML.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/Oswald-VariableFont_wght.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/static/Oswald-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/static/Oswald-ExtraLight.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/static/Oswald-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/static/Oswald-Medium.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/static/Oswald-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/static/Oswald-SemiBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/authForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d5a5681d-6936-4923-bcaf-5da218378c39.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d5a5681d-6936-4923-bcaf-5da218378c39/storage_v2/_src_/database/postgres.edMnLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d5a5681d-6936-4923-bcaf-5da218378c39/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d5a5681d-6936-4923-bcaf-5da218378c39/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d5a5681d-6936-4923-bcaf-5da218378c39/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d5a5681d-6936-4923-bcaf-5da218378c39/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d5a5681d-6936-4923-bcaf-5da218378c39/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d5a5681d-6936-4923-bcaf-5da218378c39/storage_v2/_src_/database/postgres.edMnLQ/schema/schema_name.aVrCww.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrations/20250313160413_create_user.down.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrations/20250313160413_create_user.up.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comand.sql" beforeDir="false" afterPath="$PROJECT_DIR$/comand.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/config/Posgres.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/config/Posgres.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/http/controllers/UserController.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/http/controllers/UserController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/http/repository/UserRepo.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/http/repository/UserRepo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/http/route/UserRoute.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/http/route/UserRoute.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/http/service/userService.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/http/service/userService.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/middleware/login.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/middleware/login.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/model/userModel.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/model/userModel.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/Cookie/CreateCookie.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/Cookie/CreateCookie.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/auth/errors.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/auth/errors.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ChangePassword.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/ChangePassword.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/CreateUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/CreateUser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ChangePassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ChangePassword.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/CreateUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/CreateUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/GetUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/GetUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/GetUserForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/GetUserForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/authForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/authForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/userForm.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="GOROOT" url="file://$USER_HOME$/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.24.0.windows-amd64" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Go File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" url="file:///snap/go/10866" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -43,35 +73,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "git-widget-placeholder": "main",
-    "go.import.settings.migrated": "true",
-    "go.sdk.automatically.set": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/deftm/Desktop/Папки и текстовые документы/GitHub/modul3",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/deft/Документы/development/GitLab/244913-MrdeftMan-course-1343&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pkg/Cookie" />
       <recent name="C:\Users\deftm\Desktop\Папки и текстовые документы\GitHub\modul3" />
     </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-gosdk-d297c17c1fbd-57c114c3cede-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-243.24978.59" />
-        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-GO-243.24978.59" />
+        <option value="bundled-gosdk-d297c17c1fbd-57c114c3cede-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-243.25659.52" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-GO-243.25659.52" />
       </set>
     </attachedChunks>
   </component>

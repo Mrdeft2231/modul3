@@ -1,19 +1,14 @@
-package pkg
+package Cookie
 
 import (
-	"github.com/gin-gonic/gin"
-	"net/http"
+	"log"
 	"rest/pkg/jwt"
 )
 
-func CreateToken(id int, c *gin.Context) {
+func CreateJwtToken(id int) string {
 	token, err := jwt.CreateJWT(id)
 	if err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": "Не удалось создать jwt токен"})
+		log.Println("Не удалось создать куки", err)
 	}
-
-	c.JSON(http.StatusOK, gin.H{
-		"message": "Пользователь успешно зарегестрирован",
-		"token":   token,
-	})
+	return token
 }

@@ -35,7 +35,7 @@ button.addEventListener("click", (event) => {
 
   console.log(formObject)
 
-  fetch("/createAuth", {
+  fetch("/Auth", {
     method: "POST",
     credentials: "include",
     headers: {
@@ -43,9 +43,27 @@ button.addEventListener("click", (event) => {
     },
     body: JSON.stringify(formObject)
   })
-    .then(response => response.json())
-    .then(data => console.log("Ответ сервера:", data))
-    .catch(error => console.error("Ошибка:", error));
+    .then(async response => {
+      if (!response.ok) {
+        let errorMessage = "Неправильный логин или пароль"
+        try {
+          const errorData = await response.json();
+          errorMessage = errorData.error || errorMessage
+        } catch (e) {
+          console.warn("Сервер вернул не-JSON ошибку")
+        }
+        throw new Error(errorMessage)
+      }
+      if (response.status === 204) return {}
+
+      return response.json()
+    })
+      .then(data => {
+        if (data.redirect) {
+          window.location.href = data.redirect;  // Перенаправляем пользователя
+        }
+      })
+    .catch(error => alert(error.message));
 });
 
 

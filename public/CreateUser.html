@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/main.css">
+    <link rel="stylesheet" href="/public/main.css?v=1.0.1">
     <script src="/public/js/GetUser.js?v=1.0.2" defer></script>
+    <script src="/public/js/CreateUser.js?v=1.0.5" defer></script>
     <title>Authh</title>
 </head>
 
 <body>
 <header class="main">
-    <div class="continerTable">
+    <a href="/"> <button class="LeaveButton" id="LeaveButton">выйти</button></a>
+    <dlocation.reload() class="continerTable">
         <div class="continerTableUser">
             <div class="TextUser">
                 <h1 class="titleUser">Сотрудники</h1>
@@ -29,20 +31,12 @@
                     </tr>
                     </thead>
                     <tbody id="userTableBody">
-                    <tr>
-                        <th>deft</th>
-                        <th>deft@mail.ru</th>
-                        <th>password</th>
-                        <th>активен 🚫</th>
-                        <th>пользователь</th>
-                        <th>28</th>
-                        <th><button id="DeleteUser">Удалить</button></th>
-                    </tr>
                     </tbody>
                 </table>
             </div>
         </div>
         <div class="continerTableButton">
+            <form id="CreateUser">
             <div class="AuthText">
                 <h1>Вход в систему</h1>
                 <label class="lbAuth">
@@ -62,16 +56,17 @@
                     <label for="Role">
                         <select name="Role" id="Role">
                         <option value="">Выберите роль</option>
-                        <option value="Admin">Администратор</option>
-                        <option value="User">Пользователь</option>
+                        <option value="Администратор">Администратор</option>
+                        <option value="Сотрудник">Пользователь</option>
                     </select>
                     </label>
                 </div>
 
                 <div class="ButtonFormUser">
-                    <button class="CreateButton" type="submit">Создать пользователя</button>
+                    <button class="CreateButton" id="CreateButtonUsers" type="submit">Создать пользователя</button>
                 </div>
             </div>
+            </form>
         </div>
         </div>
     </div>
